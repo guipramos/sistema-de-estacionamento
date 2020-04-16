@@ -1,0 +1,19 @@
+.campo-editar{
+    display:none;
+}
+
+.modal-editar {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.box {
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 10px;
+}

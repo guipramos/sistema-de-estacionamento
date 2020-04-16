@@ -49,8 +49,18 @@ function apagarVeiculo(placa){
     }
 
     mostraPatio();
-    
 }
+
+/* EDITAR */
+
+function editarVeiculo(){
+    document.querySelector(".campo-editar").style.display = "block";
+    var valorModeloCarro = document.querySelector(".modeloEditar").value;
+    var valorPlacaCarro = document.querySelector(".placaEditar").value;
+
+
+}
+
 
 function mostraPatio(){
     var carros = JSON.parse(localStorage.getItem('patio2'));
@@ -67,7 +77,11 @@ function mostraPatio(){
         carrosResultado.innerHTML += '<tr><td>' + modelo + 
                                 '</td><td>' + placa +
                                 '</td><td>' + hora + ':' + minutos +
-                                '</td><td><button class="btn btn-danger" onclick="apagarVeiculo(\'' + placa + '\')">Excluir</button></td>' +
+                                '</td><td><button class="btn btn-danger" onclick="apagarVeiculo(\'' + placa + '\')">Excluir</button>' +
+                                '</td><td><button class="btn btn-primary" onclick="editarVeiculo(\'' + modelo + placa + '\')">Edit</button></td>' +
                                 '</tr>'
     }
 }
+
+
+

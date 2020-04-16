@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sistema de Estacionamento</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/geral.css">
+
+
 </head>
 <body onload="mostraPatio();">
     
@@ -42,6 +45,28 @@
                     </thead>
                     <tbody id="resultados"></tbody>
                 </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL EDITAR -->
+
+
+    <div class="modal-editar campo-editar">
+        <div class="container">
+            <div class="box">
+                <form id="formulario">
+                    <div id="aviso"></div>
+                    <div class="form-group">
+                        <label for="model-veiculo">Modelo do veiculo</label>
+                        <input type="text" class="form-control modeloEditar" id="model-veiculo" placeholder="Digite o modelo do veiculo...">
+                    </div>
+                    <div class="form-group">
+                        <label for="placa-veiculo">Placa do veiculo</label>
+                        <input type="text" class="form-control placaEditar" id="placa-veiculo" placeholder="Digite a placa do veiculo...">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Adicionar</button>
+                </form> 
             </div>
         </div>
     </div>
